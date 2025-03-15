@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ProfileCard extends StatelessWidget {
-  final String ig,name, studentID, email, university, image;
+  final String ig, name, studentID, email, university, image, study;
   const ProfileCard(
       {super.key,
       required this.ig,
@@ -9,7 +9,8 @@ class ProfileCard extends StatelessWidget {
       required this.studentID,
       required this.email,
       required this.university,
-      required this.image});
+      required this.image,
+      required this.study});
 
   @override
   Widget build(BuildContext context) {
@@ -36,42 +37,77 @@ class ProfileCard extends StatelessWidget {
               height: 10,
             ),
             Text(ig,
-                    style:
-                        const TextStyle(fontSize: 20, fontWeight: FontWeight.bold,color: Colors.white)),
+                style: const TextStyle(
+                    fontSize: 20,
+                    fontWeight: FontWeight.bold,
+                    color: Colors.white)),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(name,
-                    style:
-                        const TextStyle(fontSize: 16, fontWeight: FontWeight.bold,color: Colors.white)),
+                    style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white)),
                 const SizedBox(
                   width: 10,
                 ),
                 Text(studentID,
-                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold,color: Colors.white))
+                    style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white))
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Icon(
+                Icon(
+                  Icons.computer,
+                  color: Colors.blueGrey[50],
+                ),
+                const SizedBox(
+                  width: 10,
+                ),
+                Text(study,
+                    style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white))
+              ],
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Icon(
                   Icons.email,
-                  color: Colors.blueGrey,
+                  color: Colors.blueGrey[50],
                 ),
-                const SizedBox(width: 10,),
+                const SizedBox(
+                  width: 10,
+                ),
                 Text(email,
-                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold,color: Colors.white))
+                    style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white))
               ],
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Icon(
-                  Icons.school,color: Colors.blueGrey,
+                Icon(
+                  Icons.school,
+                  color: Colors.blueGrey[50],
                 ),
-                const SizedBox(width: 10,),
+                const SizedBox(
+                  width: 10,
+                ),
                 Text(university,
-                    style: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold,color: Colors.white))
+                    style: const TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white))
               ],
             ),
           ],

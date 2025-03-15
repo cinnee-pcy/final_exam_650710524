@@ -34,20 +34,24 @@ class MyWidgetPro extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 192, 53, 97),
-        title: Text('Profile Card',style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white),),
+        title: Text(
+          'Profile Card',
+          style: TextStyle(fontWeight: FontWeight.bold, color: Colors.white),
+        ),
       ),
       body: const Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             ProfileCard(
-              ig: 'Cinnee_pcy',
+              ig: 'CINNEE_PCY',
               name: 'Kawisara Prasitnui',
               studentID: '650710524',
               email: 'sincin46@gmail.com',
               university: 'Silpakorn University',
               image:
                   '/Users/cinnee_pcy/StudioProjects/week6/assets/image/imagetest.jpg',
+              study: 'Computer Science Student',
             ),
           ],
         ),
