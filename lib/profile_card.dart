@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
 class ProfileCard extends StatelessWidget {
-  final String ig, name, studentID, email, university, image, study;
+  final String ig, name, email, university, image, study;
   const ProfileCard(
       {super.key,
       required this.ig,
       required this.name,
-      required this.studentID,
       required this.email,
       required this.university,
       required this.image,
@@ -52,11 +51,7 @@ class ProfileCard extends StatelessWidget {
                 const SizedBox(
                   width: 10,
                 ),
-                Text(studentID,
-                    style: const TextStyle(
-                        fontSize: 16,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white))
+                
               ],
             ),
             Row(

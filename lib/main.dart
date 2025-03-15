@@ -45,8 +45,7 @@ class MyWidgetPro extends StatelessWidget {
           children: [
             ProfileCard(
               ig: 'CINNEE_PCY',
-              name: 'Kawisara Prasitnui',
-              studentID: '650710524',
+              name: 'Ms. Kawisara Prasitnui',
               email: 'sincin46@gmail.com',
               university: 'Silpakorn University',
               image:
